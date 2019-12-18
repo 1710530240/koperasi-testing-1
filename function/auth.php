@@ -4,7 +4,7 @@ if (!isset($_POST['email'])) {
     $_SESSION['isLoggin'] = false;
     header('Location: /koperasi-testing/admin/dashboard.php');
 } else {
-    $connect = mysqli_connect('localhost', 'root', '', 'koperasi-testing');
+    $connect = mysqli_connect('localhost', 'root', '', 'koprasi-testing');
     if (!$connect) {
         die('Koneksi gagal: ' . mysqli_connect_error());
     }
